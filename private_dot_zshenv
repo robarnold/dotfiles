@@ -1,0 +1,7 @@
+if [ -f .cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
+if [ -d /snap/bin ]; then
+    PATH="/snap/bin:$PATH"
+fi
+export PATH="$HOME/.local/bin:$PATH"
