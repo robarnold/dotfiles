@@ -7,6 +7,10 @@ if status is-interactive
 
     fish_vi_key_bindings
 
+    if command -q chezmoi
+        chezmoi completion fish | source
+    end
+
     if command -q just
         just --completions fish | source
     end
